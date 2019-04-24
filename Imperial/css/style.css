@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 23px;
     line-height: 36px;
   }
 }
@@ -598,6 +598,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
 }
 
+
+@media (max-width: 768px) {
+#subscribe .subscribe-title {
+  color: #007ab5;
+  font-size: 23px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+}
+
 #subscribe .subscribe-text {
   color: #fff;
   font-size: 20px;
@@ -798,24 +808,72 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #contact {
   background: #f7f7f7;
-  padding: 80px 0;
+  padding:50px;
 }
 
-#contact .info {
-  color: #333333;
+@media (max-width: 768px) {
+#contact{
+  padding:0px;
+}
 }
 
-#contact .info i {
-  font-size: 32px;
+.section-headline h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  position: relative;
+  text-transform: capitalize;
   color: #007ab5;
-  /* float: left; */
 }
 
-#contact .info p {
-  padding: 0 0 10px 50px;
-  line-height: 24px;
+@media (max-width: 768px) {
+.section-headline h2 {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  position: relative;
+  text-transform: capitalize;
+  color: #007ab5;
+  padding-top: 45px;
+}
 }
 
+.section-title-divider {
+  width: 50px;
+  height: 3px;
+  background: #007ab5;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+
+
+.single-icon i {
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  line-height: 46px;
+  border-radius: 156%;
+  margin-bottom: 20px;
+  background-color: #007ab5;
+  color: #fff;
+  padding: 8px;
+}
+
+
+
+.single-icon span {
+  color: #007ab5;
+}
+
+
+.single-icon p  {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
 
 .footer-title{
   font-family: "Poppins", sans-serif;
