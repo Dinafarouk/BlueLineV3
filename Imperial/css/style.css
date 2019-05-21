@@ -109,7 +109,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-logo img {
-  max-width: 100%;
+  max-width: 37%;
+}
+
+@media (max-width: 768px) {
+  #hero .hero-logo img{
+    max-width: 80%;
+  }
+}
+
+
+@media (max-width: 375px) {
+  #hero .hero-logo img{
+    max-width: 80%;
+  }
 }
 
 #hero .hero-container {
@@ -485,18 +498,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*-------section about --------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-.section-title1 {
+.section1-title {
   font-size: 32px;
   color: #007ab5;
   text-transform: uppercase;
@@ -504,6 +506,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   /* padding-bottom: 40px; */
 }
+@media (max-width:768){
+  .section1-title {
+     font-size: 23px;
+  }
+}
+@media (max-width:375){
+  .section1-title {
+    font-size: 23px;
+  }
+}
+
 
 
 /*--------------------------------------------------------------
@@ -518,6 +531,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   /* padding-bottom: 40px; */
 }
+
+@media (max-width:768){
+  .section-title2 {
+     font-size: 23px;
+  }
+}
+@media (max-width:375){
+  .section-title2{
+    font-size: 23px;
+  }
+}
+
 
 
 #MANIFESTO .MANIFESTO-content {
@@ -1292,12 +1317,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #services {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.68)), url(../img/bg1.jpg) fixed center center; 
+  background-size: cover; 
   padding: 60px 0 40px 0;
-  background-color: #F6F6F6;
-  float: left;
-  display: inline;
+  /* text-align: center; */
+
+  padding: 60px 0 40px 0;
+  /* background-color: #F6F6F6; */
+  /* float: left;
+  display: inline; */
   /* padding: 70px 0; */
-  width: 100%;
+  /* width: 100%; */
  }
  
  #services .box {
@@ -1332,6 +1362,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 2.5rem;
 }
 
+
+.section-header .serv {
+
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  letter-spacing: -0.03rem;
+  margin-top: 5px;
+  margin-bottom: 5.2rem;
+  text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+}
 
 
  #services .box:hover {
@@ -1472,6 +1514,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #007ab5;
 }
 
+
+
+
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
@@ -1528,6 +1573,109 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-item:hover .details span {
   transform: translate3d(0, 0, 0);
 }
+
+
+
+
+
+
+/* why-us Section
+--------------------------------*/
+
+#whyus {
+ /* background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.68)), url(../img/bg1.jpg) fixed center center; 
+  background-size: cover;  */
+  padding: 70px 0;
+  text-align: center;
+}
+
+
+#whyus .whyus-title {
+  font-size: 32px;
+  color: #007ab5;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  /* padding-bottom: 40px; */
+  padding-top: 80px;
+
+
+}
+
+@media (max-width: 768px) {
+#whyus .whyus-title {
+  color: #007ab5;
+  font-size: 23px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-top: 60px;
+}
+}
+@media (max-width: 375px) {
+  #whyus .whyus-title {
+    color: #007ab5;
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 60px;
+  }
+  }
+
+#whyus .whyus-text {
+  /* color: #111; */
+  font-size: 2.5rem;
+}
+
+/* @media (max-width: 768px) {
+  #subscribe .subscribe-text {
+    color: #007ab5;
+    font-size: 23px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 60px;
+  }
+  }
+  @media (max-width: 375px) {
+  #subscribe .subscribe-text {
+      color: #007ab5;
+      font-size: 23px;
+      font-weight: 700;
+      padding-bottom: 20px;
+      padding-top: 60px;
+    }
+    } */
+
+#whyus .whyus-btn-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#whyus .whyus-btn {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#whyus .whyus-btn:hover {
+  background: #007ab5;
+  border: 2px solid #007ab5;
+}
+
+
+
+
+
+
+
 
 /* Testimonials Section
 --------------------------------*/
@@ -1667,7 +1815,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 	background-image: url("/Imperial/img/bg-3.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+  /* background-size: 100% 100%; */
+  background-size:cover;
 	display: inline;
 	float: left;
 	padding: 70px 0;
@@ -2018,7 +2167,7 @@ canvas {
   top: 0px;
   /* right: 0; */
   /* bottom: 0; */
-  left: 170px;
+  /* left: 170px; */
   z-index: 1050;
   display: none;
   overflow: hidden;
@@ -2050,6 +2199,19 @@ canvas {
   text-align: center;
 }
 
+@media (max-width: 375){
+  .portfolio-modal .modal-content h2{
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 768px){
+  .portfolio-modal .modal-content h2{
+  font-size: 23px;
+}
+}
+
+
 
 
 .portfolio-modal .modal-content p.item-intro {
@@ -2073,7 +2235,7 @@ canvas {
 .portfolio-modal .modal-content img {
   margin-bottom: 80px;
   width: 1136px;
-  height: 757px;
+  height: auto;
   /* position: relative;
   left: 204px; */
 }
