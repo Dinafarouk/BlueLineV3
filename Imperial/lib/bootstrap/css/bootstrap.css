@@ -3117,7 +3117,10 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4;
+  position: relative;
+  left: 173px;
 }
+
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
@@ -3437,7 +3440,12 @@ fieldset[disabled] .btn-link:focus {
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
+  /* text-align: center; */
+ 
 }
+
+
+
 .btn-sm,
 .btn-group-sm > .btn {
   padding: 5px 10px;
@@ -5945,6 +5953,7 @@ button.close {
 .modal-body {
   position: relative;
   padding: 15px;
+  
 }
 .modal-footer {
   padding: 15px;
