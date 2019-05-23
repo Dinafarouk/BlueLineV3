@@ -4,22 +4,22 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
+/* 
 @font-face {
   font-family: 'PoiretOne';
   /* font-style: normal;
   font-weight: 400; */
-  src: url("../lib/FontAwesome/fonts/PoiretOne-Regular.ttf");
-}
+  /* src: url("../lib/FontAwesome/fonts/PoiretOne-Regular.ttf");
+} */
 
 
-
+/* 
 @font-face {
-  font-family: 'beautiful-creatures';
+  font-family: 'beautiful-creatures'; */
   /* font-style: normal;
   font-weight: 400; */
-  src: url("../lib/FontAwesome/fonts/beautiful-creatures");
-}
+  /* src: url("../lib/FontAwesome/fonts/beautiful-creatures"); */
+ /* }  */
 
 a {
   color: #007ab5;
@@ -490,6 +490,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* padding-bottom: 40px; */
 }
 
+@media (max-width: 375px){
+  .section-title  {
+    font-size: 23px;
+}
+}
+
+
+@media (max-width: 768px){
+.section-title  {
+      font-size: 23px;
+}
+
+}
                    /*--------------------------------------------------------------
                                            page about us
                 --------------------------------------------------------------*/
@@ -506,12 +519,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   /* padding-bottom: 40px; */
 }
-@media (max-width:768){
+@media (max-width:768px){
   .section1-title {
      font-size: 23px;
   }
 }
-@media (max-width:375){
+@media (max-width:375px){
   .section1-title {
     font-size: 23px;
   }
@@ -532,12 +545,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* padding-bottom: 40px; */
 }
 
-@media (max-width:768){
+@media (max-width:768px){
   .section-title2 {
      font-size: 23px;
   }
 }
-@media (max-width:375){
+@media (max-width:375px){
   .section-title2{
     font-size: 23px;
   }
@@ -552,8 +565,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #MANIFESTO .MANIFESTO-title2 {
 
-  font-size: 2.5rem;
-  /* color: #333; */
+  /* font-size: 2.5rem; */
   /* font-weight: 700; */
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -593,32 +605,39 @@ body.mobile-nav-active #mobile-nav-toggle {
  
  #about .about-content {
    background: #fff;
+   font-family: "Montserrat", sans-serif;
+   line-height: 1.5;
+   letter-spacing: -0.03rem;
+   margin-top: 5px;
+   margin-bottom: 4.2rem;
+   text-align: center;
+}
  
- }
-/*  
-  #about .about-title { */
+
+ 
+ #about .about-title { 
  
       /* color: #333;  */
      /* font-weight: 700; 
      font-family: "Montserrat", sans-serif; 
      font-weight: 600; 
-     font-size: 2.5rem; 
+     /* font-size: 2.5rem;  */
      line-height: 1.5;
      letter-spacing: -0.03rem;
      margin-top: 5px;
      margin-bottom: 0.2rem;
      text-align: center;
  }
-  */
+  
 
- @media (max-width:768){
-   #about .about-title {
-      font-size: 2.5rem;
+ @media (max-width:768px){
+   #about .about-content .about-title {
+      font-size: 2.0rem;
    }
  }
- @media (max-width:375){
-   #about .about-title {
-      font-size: 2.5rem;
+ @media (max-width:375px){
+   #about .about-content .about-title {
+      font-size: 2.0rem;
    }
  }
  #about .about-content .about-title h2 {
@@ -634,18 +653,33 @@ body.mobile-nav-active #mobile-nav-toggle {
    margin-bottom: 0;
  }
 
- .btn_more_about{
-   color: #fff;
 
 
- }
+ #about .btn_more_about{
 
- .btn btn-primary .btn_more_about , a:hover{
- 
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+  margin: 10px;
+  background: #007ab5;
+  border: 2px solid #007ab5;
   color: #fff;
 
 }
-
+/*   
+#about .btn a:hover{
+ 
+    background: #030303;
+    border: 2px solid #030303;
+    color: #fff;
+  } 
+  */
 
 .section-heading{   
    font-size: 32px;
@@ -1010,7 +1044,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* font-weight: 700; */
   font-family: "Montserrat", sans-serif;
   /* font-weight: 600; */
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   line-height: 1.5;
   letter-spacing: -0.03rem;
   margin-top: 5px;
@@ -1020,10 +1054,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 768px) {
   #CHAIRMAN_MESSAGE .CHAIRMAN-title3{
-     font-size: 2.5rem;
+     font-size: 2.0rem;
   }
 
   }
+  @media (max-width: 375px) {
+    #CHAIRMAN_MESSAGE .CHAIRMAN-title3{
+       font-size: 2.0rem;
+    }
+  
+    }
 /*---------------------end  CHAIRMAN MESSAGE---------------*/
 
 
@@ -1065,6 +1105,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* color: #111; */
   font-size: 20px;
 }
+
+@media (max-width: 768px){
+  #MISSION_VISION .MISSION_VISION-text{
+     font-size: 2.0rem;
+  }
+ 
+}
+@media(max-width: 375px){
+  #MISSION_VISION .MISSION_VISION-text{
+    font-size: 2.0rem;
+ }
+
+}
 /* 
 #MISSION .MISSION-btn-container {
   text-align: center;
@@ -1094,44 +1147,44 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-/*.......................about2  .........................................................................*/
+/*.......................who-we-are  .........................................................................*/
 
-#About2 {
+#who-we {
   background: #fff;
   padding: 80px 0;
 }
 
 
-#About2 .About-img {
+/* #who-we .who-we-img {
   overflow: hidden;
 }
 
-#About2 .About-img img {
+#who-we .who-we-img img {
   max-width: 100%;
 }
 
 @media (max-width: 768px) {
-  #About2 .About-img {
+  #who-we .who-we-img {
     height: auto;
   }
-  #About2 .About-img img {
+  #who-we .About-img img {
     margin-left: 0;
     padding-bottom: 30px;
   }
-}
+} */
 
-#About2 .About2-content {
+#who-we .who-we-content {
   background: #fff;
 
 }
 
-#About2 .About2-title {
+#who-we .who-we-title {
 
+   /* font-weight: 600; */
     /* color: #333; */
     /* font-weight: 700; */
     font-family: "Montserrat", sans-serif;
-    /* font-weight: 600; */
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     line-height: 1.5;
     letter-spacing: -0.03rem;
     margin-top: 5px;
@@ -1140,27 +1193,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-@media (max-width:768){
-  #About2 .About2-content .About2-title {
+@media (max-width:768px){
+  #who-we  .who-we-title {
      font-size: 2.0rem;
   }
 }
 
-@media (max-width:375){
-  #About2 .About2-content .About2-title {
+@media (max-width:375px){
+  #who-we .who-we-title {
      font-size: 2.0rem;
   }
 }
-#About2 .About2-content .About-title h2 {
+#who-we .who-we-content .who-we-title h2 {
   text-align: center;
 }
 
-#About2 .About2-text {
+#who-we .who-we-text {
   line-height: 26px;
   margin-bottom: 15px;
 }
 
-#About2 .About2-text:last-child {
+#who-we .who-we-text:last-child {
   margin-bottom: 0;
 }
 
@@ -1231,7 +1284,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     line-height: 1.5;
     letter-spacing: -0.03rem;
     margin-top: 5px;
-    margin-bottom: 5rem;
+    margin-bottom:-1rem;
     text-align: center;
 }
 
@@ -1331,7 +1384,7 @@ body.mobile-nav-active #mobile-nav-toggle {
  }
  
  #services .box {
-   padding: 26px;
+   padding: 40px;
    position: relative;
    overflow: hidden;
    border-radius: 10px;
@@ -1350,6 +1403,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   /* padding-bottom: 40px; */
 }
+
+@media (max-width: 375px){
+  .section-header h3  {
+    font-size: 23px;
+}
+}
+
+
+@media (max-width: 768px){
+  .section-header h3  {
+      font-size: 23px;
+}
+
+}
+
 
 .section-header p {
 
@@ -1373,6 +1441,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
     font-size: 2.5rem;
     color: #fff;
+}
+
+@media (max-width: 375px){
+  .section-header .serv  {
+    font-size: 2.0rem;
+}
+}
+
+
+@media (max-width: 768px){
+  .section-header .serv  {
+      font-size: 2.0rem;
+}
+
 }
 
 
@@ -1470,24 +1552,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 2.5rem;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   #subscribe .subscribe-text {
-    color: #007ab5;
-    font-size: 23px;
-    font-weight: 700;
+ 
+    font-size:  2.0rem;
     padding-bottom: 20px;
-    padding-top: 60px;
+    padding-top: 23px;
+    padding: 0px 
   }
   }
   @media (max-width: 375px) {
   #subscribe .subscribe-text {
-      color: #007ab5;
-      font-size: 23px;
-      font-weight: 700;
+   
+      font-size: 2.0rem;
       padding-bottom: 20px;
-      padding-top: 60px;
+      padding-top: 23px;
+      padding: 0px ;
     }
-    } */
+    }
 
 #subscribe .subscribe-btn-container {
   text-align: center;
@@ -1788,23 +1870,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-/* Contact Section
---------------------------------*/
-/* #contact {
-  background: #f7f7f7;
-  padding:50px;
-} */
-
-/* @media (max-width: 768px) {
-#contact{
-  padding:0px;
-}
-} */
-
-
-
-
-
 
 /*--------------------*/
 /* CONTACT */
@@ -1820,15 +1885,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 	display: inline;
 	float: left;
 	padding: 70px 0;
-	width: 100%;
+  width: 100%;
+  visibility: visible;
 }
 
 .contact-left {
 	background-color: #31708f2b;
 	display: inline;
 	float: left;
-	padding: 30px 40px 10px;
-	width: 100%;
+  padding: 66px 53px 65px;
+  width: 100%;
+  visibility: visible;
 }
 /* .contact-left h2 {
 	color: #007ab5;
@@ -1897,10 +1964,11 @@ padding-top: 40px;
 .contact-right{
   z-index: 999;
 	background-color: #31708f2b;
-	display: inline;
-	float: left;
-	padding:56px 129px;
-	width: 100%;
+	/* display: inline; */
+	/* float: left; */
+  padding: 120px 126px 293px;
+  width: 100%;
+  visibility: visible;
 }
 .contact-right h2 {
 	color: #fafafa;
@@ -1914,8 +1982,19 @@ padding-top: 40px;
 .contact-right .navbar-brand img{
   max-width: 225px;
   margin: 0 auto;
+  visibility: visible;
 }
 
+
+@media (max-width: 768px) {
+  .contact-right .navbar-brand img{
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+   
+    
+  }
 @media (max-width: 768px) {
   .contact-right{
     float: none;
@@ -1930,6 +2009,7 @@ padding-top: 40px;
   }
   .contact-right .navbar-brand img{
     text-align: center;
+    visibility: visible;
     
 }
 
@@ -2092,7 +2172,13 @@ padding-top: 40px;
 	margin: 40px 0px;
   width: 100%;
   padding: 11px;
-  padding-top: 20px;
+  padding-top: 40px;
+  visibility: visible;
+}
+@media(max-width:375px){
+  .footer-social{
+padding-top: 80px
+  }
 }
 
 .footer-social a {
@@ -2110,17 +2196,20 @@ padding-top: 40px;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-o-transition: all 0.5s;
-	transition: all 0.5s;
+  transition: all 0.5s;
+  visibility: visible;
 }
 .footer-social a.facebook:hover{
 	background-color: #3b5998;
 	border-color: #3b5998;
-	color: #fff;
+  color: #fff;
+  visibility: visible;
 }
 .footer-social a.twitter:hover{
 	color: #fff;
 	background-color: #00aced;
-	border-color: #00aced;
+  border-color: #00aced;
+  
 }
 
 .footer-social a.youtube:hover{
@@ -2202,12 +2291,14 @@ canvas {
 @media (max-width: 375){
   .portfolio-modal .modal-content h2{
     font-size: 23px;
+    font-weight: bold;
   }
 }
 
 @media (max-width: 768px){
   .portfolio-modal .modal-content h2{
   font-size: 23px;
+  font-weight: bold;
 }
 }
 
@@ -2215,7 +2306,7 @@ canvas {
 
 
 .portfolio-modal .modal-content p.item-intro {
-  font-size: 16px;
+  font-size: 20px;
   /* font-style: italic; */
   margin: 20px 0 30px;
   font-family: unset;
@@ -2243,8 +2334,19 @@ canvas {
 
 .portfolio-modal .modal-content button {
   cursor: pointer;
+  font-size: 3rem;
 }
 
+@media(max-width:375px){
+  .portfolio-modal .modal-content button{
+    font-size: 18px
+  }
+}
+@media(max-width:768px){
+  .portfolio-modal .modal-content button{
+    font-size: 18px
+  }
+}
 .portfolio-modal .close-modal {
   position: absolute;
   top: 25px;
@@ -2282,9 +2384,40 @@ canvas {
   background-color: #212529;
 }
 
+.well {
+  min-height: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  font-size: 20px;
+  /* line-height: 20px */
+}
+
+@media (max-width: 375px){
+  .well{
+    padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  }
+}
+
+@media (max-width: 768px){
+  .well{
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+}
 
 
 #MANIFESTO {
   background: #fff;
   padding: 80px 0;
 }
+
+
+
