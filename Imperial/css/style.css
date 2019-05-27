@@ -1909,7 +1909,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #contact {
-	background-image: url("/Imperial/img/contact us .jpg");
+	background-image: url("../img/contact us .jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
   /* background-size: 100% 100%; */
