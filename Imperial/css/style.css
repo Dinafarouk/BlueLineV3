@@ -923,11 +923,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-
+/* 
 @media (max-width: 768px) {
   .timeline:before {
-    /* left: 50%; */
-  }
+    /* left: 50%; }
+    */
+  
   
   .timeline > li {
     min-height: 100px;
@@ -955,7 +956,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 0 30px 20px 100px;
     text-align: left;
   }
-}
 
 @media (min-width: 992px) {
   .timeline > li {
@@ -1038,8 +1038,6 @@ body.mobile-nav-active #mobile-nav-toggle {
    }
  }
 
-
-/*---------------------end OUR VALUES---------------*/
 
 
 /*---------------------start CHAIRMAN MESSAGE---------------*/
