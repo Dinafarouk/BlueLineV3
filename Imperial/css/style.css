@@ -1907,7 +1907,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #contact {
+<<<<<<< HEAD
 	background-image: url("../img/contact\ us\ .jpg");
+=======
+	background-image: url("../img/contact us .jpg");
+>>>>>>> 90fce9e035afad2f80530d8aec08ff163ac8147a
 	background-position: center center;
 	background-repeat: no-repeat;
   /* background-size: 100% 100%; */
