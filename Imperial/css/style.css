@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: #007ab5;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #007ab5;
+  color: #f4f4f4;
 }
 
 .nav-menu ul {
@@ -518,7 +518,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-title {
   font-size: 32px;
-  color: #007ab5;
+  /* color: #007ab5; */
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -600,7 +600,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #MANIFESTO .MANIFESTO-title2 {
 
-  /* font-size: 2.5rem; */
+  font-size: 2.5rem;
   /* font-weight: 700; */
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -655,8 +655,9 @@ body.mobile-nav-active #mobile-nav-toggle {
       /* color: #333;  */
      /* font-weight: 700; 
      font-family: "Montserrat", sans-serif; 
-     font-weight: 600; 
-     /* font-size: 2.5rem;  */
+     font-weight: 600; */
+  
+     font-size: 2.5rem; 
      line-height: 1.5;
      letter-spacing: -0.03rem;
      margin-top: 5px;
@@ -1080,7 +1081,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* font-weight: 700; */
   font-family: "Montserrat", sans-serif;
   /* font-weight: 600; */
-  /* font-size: 2.5rem; */
+  font-size: 2.5rem;
   line-height: 1.5;
   letter-spacing: -0.03rem;
   margin-top: 5px;
@@ -1132,8 +1133,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #007ab5;
   font-size: 23px;
   font-weight: 700;
-  padding-bottom: 30px;
-  padding-top: 90px;
+  /* padding-bottom: 30px; */
+  padding-top: 0px;
 }
 }
 
@@ -1145,12 +1146,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 768px){
   #MISSION_VISION .MISSION_VISION-text{
      font-size: 2.0rem;
+     padding-bottom: 30px;
+}
   }
  
-}
+
 @media(max-width: 375px){
   #MISSION_VISION .MISSION_VISION-text{
     font-size: 2.0rem;
+    padding-bottom: 30px;
+
  }
 
 }
@@ -1220,7 +1225,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     /* color: #333; */
     /* font-weight: 700; */
     font-family: "Montserrat", sans-serif;
-    /* font-size: 2.5rem; */
+    font-size: 2.5rem;
     line-height: 1.5;
     letter-spacing: -0.03rem;
     margin-top: 5px;
@@ -1348,58 +1353,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-text:last-child {
   margin-bottom: 0;
 }
-
-/* Services Section
---------------------------------*/
-/* #services {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
-  background-size: cover;
-  padding: 80px 0 60px 0;
-}
-
-#services .service-item {
-  margin-bottom: 20px;
-}
-
-#services .service-icon {
-  float: left;
-  background: #007ab5;
-  padding: 16px;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #007ab5;
-}
-
-#services .service-icon i {
-  color: #fff;
-  font-size: 24px;
-}
-
-#services .service-item:hover .service-icon {
-  background: #fff;
-}
-
-#services .service-item:hover .service-icon i {
-  color: #007ab5;
-}
-
-#services .service-title {
-  margin-left: 80px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-#services .service-title a {
-  color: #111;
-}
-
-#services .service-description {
-  margin-left: 80px;
-  line-height: 24px;
-} */
-
-
 
 
 /* Services Section
@@ -1577,7 +1530,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 23px;
     font-weight: 700;
     padding-bottom: 20px;
-    padding-top: 60px;
+    padding-top: 0px;
   }
   }
 
@@ -2066,6 +2019,16 @@ a.footer-logo {
   width: 59%;
   height: 50%;
   /* margin-bottom: 5rem; */
+}
+
+
+@media (max-width: 768px){
+  a.footer-logo {
+    display: block;
+    width: 59%;
+    height: 50%;
+    margin-bottom: 5rem;
+  }
 }
 
 a.footer-logo img{
@@ -2593,3 +2556,6 @@ canvas {
 
 
 
+.ptopa{
+  padding-top: 60px !important;
+}
